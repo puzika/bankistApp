@@ -21,7 +21,7 @@
       </form>
    </header>
 
-   <main class="app">
+   <main class="app app--hidden">
       <div class="balance">
          <div>
             <div class="balance__label">Current balance</div>
@@ -30,19 +30,7 @@
          <p class="balance__value">$5000</p>
       </div>
 
-      <div class="transactions">
-         <div class="transactions__row">
-            <div class="transactions__type transactions__type--deposit">1 deposit</div>
-            <div class="transactions__date">12/03/2023</div>
-            <div class="transactions__value">$7000</div>
-         </div>
-
-         <div class="transactions__row">
-            <div class="transactions__type transactions__type--withdrawal">2 withdrawal</div>
-            <div class="transactions__date">12/03/2023</div>
-            <div class="transactions__value">-$2000</div>
-         </div>
-      </div>
+      <div class="transactions"></div>
 
       <div class="operation operation--transfer">
          <h3 class="operation__heading">Transfer money</h3>

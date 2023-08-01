@@ -10,6 +10,12 @@
    gap: 2rem;
    margin: 6rem auto;
    width: 65%;
+   transition: all .2s;
+}
+
+.app--hidden {
+   visibility: none;
+   opacity: 0;
 }
 
 .balance {
