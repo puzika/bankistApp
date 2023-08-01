@@ -1,0 +1,39 @@
+.login {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 20%;
+   min-width: 20rem;
+   
+   &__user,
+   &__password {
+      width: 100%;
+      height: 3.5rem;
+      margin-right: .5rem;
+      border-radius: 10rem;
+      border: .1rem solid transparent;
+      outline: none;
+      text-align: center;
+      font-size: $default-font-size;
+      font-family: inherit;
+      transition: border-color .2s;
+
+      &::placeholder {
+         color: $color-placeholder;
+      }
+
+      &:focus {
+         border-color: lighten($color-placeholder, 20%);
+      }
+   }
+
+   &__submit {
+      font-size: 2.5rem;
+      line-height: 0;
+      padding: 1rem 0.2rem;
+      cursor: pointer;
+      background-color: transparent;
+      border: none;
+      outline: none;
+   }
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+   <header>
+      <p class="welcome-message">Log in to get started</p>
+      <div class="logo">
+         <span class="logo__ring logo__ring--top"></span>
+         <span class="logo__ring logo__ring--bottom"></span>
+         <span class="logo__ring logo__ring--left"></span>
+         <span class="logo__ring logo__ring--right"></span>
+      </div>
+      <form action="" class="login">
+         <input type="text" placeholder="user" class="login__user">
+         <input type="text" placeholder="PIN" class="login__password">
+         <button class="login__submit">&rarr;</button>
+      </form>
+   </header>
+
+   <main class="app">
+      <div class="balance">
+         <div>
+            <div class="balance__label">Current balance</div>
+            <div class="balance__date">As of <span class="date">09/07/2023, 16:36</span></div>
+         </div>
+         <p class="balance__value">$5000</p>
+      </div>
+
+      <div class="transactions">
+         <div class="transactions__row">
+            <div class="transactions__type transactions__type--deposit">1 deposit</div>
+            <div class="transactions__date">12/03/2023</div>
+            <div class="transactions__value">$7000</div>
+         </div>
+
+         <div class="transactions__row">
+            <div class="transactions__type transactions__type--withdrawal">2 withdrawal</div>
+            <div class="transactions__date">12/03/2023</div>
+            <div class="transactions__value">-$2000</div>
+         </div>
+      </div>
+
+      <div class="operation operation--transfer">
+         <h3 class="operation__heading">Transfer money</h3>
+
+         <form action="" class="form form--transfer">
+            <input type="text" class="form__input form__input--recepient">
+            <input type="text" class="form__input form__input--transfer-amount">
+            <button class="form__submit form__submit--transfer">&rarr;</button>
+            <label for="" class="form__label form__label--recepient">Transfer to</label>
+            <label for="" class="form__label form__label--transfer-amount">Amount</label>
+         </form>
+      </div>
+
+      <div class="operation operation--loan">
+         <h3 class="operation__heading">Request loan</h3>
+      
+         <form action="" class="form form--loan">
+            <input type="text" class="form__input form__input--loan-amount">
+            <button class="form__submit form__submit--loan">&rarr;</button>
+            <label for="" class="form__label form__label--loan-amount">Amount</label>
+         </form>
+      </div>
+
+      <div class="operation operation--close">
+         <h3 class="operation__heading">Close account</h3>
+      
+         <form action="" class="form form--close">
+            <input type="text" class="form__input form__input--user">
+            <input type="text" class="form__input form__input--pin">
+            <button class="form__submit form__submit--close">&rarr;</button>
+            <label for="" class="form__label form__label--user">Confirm user</label>
+            <label for="" class="form__label form__label--pin">Confirm PIN</label>
+         </form>
+      </div>
+
+      <div class="summary">
+         <p class="summary__label">IN</p>
+         <p class="summary__value summary__value--deposit">$7000</p>
+         <p class="summary__label">OUT</p>
+         <p class="summary__value summary__value--withdrawal">$2000</p>
+         <button class="sort">&darr; SORT</button>
+      </div>
+
+      <div class="timer">
+         <p class="timer__message">You will be logged out in <span class="timer__value">10:00</span></p>
+      </div>
+   </main>
+</body>
+</html>

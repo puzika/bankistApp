@@ -1,0 +1,41 @@
+.app {
+   display: grid;
+   grid-template-rows: auto repeat(3, 15rem);
+   grid-template-columns: 1.2fr .8fr;
+   grid-template-areas: "balance balance" 
+                        "transactions transfer" 
+                        "transactions loan" 
+                        "transactions close";
+   
+   gap: 2rem;
+   margin: 6rem auto;
+   width: 65%;
+}
+
+.balance {
+   background-color: transparent;
+   grid-area: balance;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-weight: 500;
+
+   &__label {
+      font-size: 2.2rem;
+   }
+
+   &__date {
+      font-size: 1.4rem;
+      color: $color-placeholder;
+   }
+
+   &__value {
+      font-size: 4.5rem;
+      font-weight: 400;
+   }
+}
+
+
+
+
+

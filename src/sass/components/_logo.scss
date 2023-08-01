@@ -1,0 +1,41 @@
+.logo {
+   position: relative;
+   width: 5.5rem;
+   height: 5.5rem;
+
+   &__ring {
+      position: absolute;
+      width: 52%;
+      height: 52%;
+      border-radius: 50%;
+      border: .25rem solid $color-black;
+
+      &--top,
+      &--bottom {
+         left: 50%;
+         transform: translateX(-50%);
+      }
+
+      &--top {
+         top: 0;
+      }
+
+      &--bottom {
+         bottom: 0;
+      }
+
+      &--left,
+      &--right {
+         top: 50%;
+         transform: translateY(-50%);
+      }
+
+      &--left {
+         left: 0;
+      }
+
+      &--right {
+         right: 0;
+      }
+   }
+}

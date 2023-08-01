@@ -1,0 +1,42 @@
+.transactions {
+   grid-area: transactions;
+   background-color: $color-white;
+   overflow: scroll;
+   border-radius: 1.5rem;
+   
+   &__row {
+      display: flex;
+      align-items: center;
+      font-size: 1.2rem;
+      padding: 2rem 4rem;
+
+      &:not(:last-child) {
+         border-bottom: .1rem solid lighten($color-placeholder, 30%);
+      }
+   }
+
+   &__type {
+      font-weight: 500;
+      color: $color-white;
+      text-transform: uppercase;
+      margin-right: 2rem;
+      padding: 0.1rem 1rem;
+      border-radius: 10rem;
+
+      &--deposit {
+         background-image: $gradient-green;
+      }
+
+      &--withdrawal {
+         background-image: $gradient-red;
+      }
+   }
+
+   &__date {
+      margin-right: auto;
+   }
+
+   &__value {
+      font-size: $default-font-size;
+   }
+}
